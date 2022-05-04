@@ -2039,6 +2039,7 @@ body {
     -ms-grid-column: 1;
   }
   .clients__comment {
+    text-align: center;
     max-width: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
