@@ -114,6 +114,7 @@
 		padding: 37.5px 0;
 	}
 	&__inst-link {
+		color: #2d3033;
 		@include text-style(400, 13px, 15px);
 		text-decoration: underline;
 		text-transform: uppercase;
