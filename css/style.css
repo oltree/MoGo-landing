@@ -1479,6 +1479,7 @@ body {
     display: block;
   }
   .reviews-icon img {
+    height: 115px;
     max-width: 115px;
   }
 }
