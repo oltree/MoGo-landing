@@ -1,0 +1,44 @@
+.map {
+	background: linear-gradient(rgba(255, 255, 255, 0.9)), url(../img/bg_4.jpg) no-repeat center;
+	background-size: cover;
+	padding: 42px 0;
+	text-align: center;
+	&__title {
+		margin: 0 0 24px 0;
+		padding: 19.5px 0;
+		color: $bg-line;
+		@include text-style(900, 36px, 42px);
+		text-transform: uppercase;
+	}
+	&__bottom {
+		margin: 0 auto;
+		width: 170px;
+		height: 4px;
+		background: $bg-line;
+	}
+}
+@media (max-width: 1024px) {
+	.map {
+		padding: 29px 0;
+		&__title {
+			margin: 0 0 16px 0;
+			padding: 13.5px 0;
+			@include text-style(900, 24px, 28px);
+		}
+		&__bottom {
+			width: 148px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.map {
+		padding: 42px 0;
+		&__title {
+			margin: 0 0 24px 0;
+			padding: 26.5px 0;
+		}
+		&__bottom {
+			width: 134px;
+		}
+	}
+}

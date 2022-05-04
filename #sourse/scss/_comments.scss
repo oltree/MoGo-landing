@@ -1,0 +1,141 @@
+.comments {
+	position: relative;
+	background: #f8f8f8;
+	padding: 42px 0;
+	&__content {
+		position: relative;
+		max-width: 1200px;
+		padding: 0 15px;
+		margin: 0 auto;
+		overflow: hidden;
+		& .swiper-button-prev::after,
+		& .swiper-button-next::after {
+			color: #c6cbcd;
+			font-size: 28px;
+		}
+		& .swiper-pagination {
+			display: none;
+		}
+	}
+	&__slide {
+		padding: 0 100px;
+		@include flexbox(flex, flex-start, center);
+		gap: 30px;
+	}
+	&__icon {
+		flex: 0 0 170px;
+		img {
+			height: 100%;
+		}
+	}
+	&__text {
+		padding: 6px 0;
+		margin: 0 0 21px 0;
+		color: #a9afb1;
+		@include text-style(500, 24px, 28px);
+		font-style: italic;
+	}
+	&__name {
+		padding: 4.5px 0;
+		@include text-style(400, 30px, 44px);
+		font-family: Kaushan-Regular;
+		overflow: hidden;
+		&::before {
+			content: "";
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			width: 70px;
+			height: 4px;
+			background: $bg-line;
+			margin-left: 56px;
+			left: -56px;
+		}
+	}
+}
+.reviews-section {
+	background: #fff;
+	padding: 42px 0 126px;
+}
+
+@media (max-width: 1024px) {
+	.comments {
+		padding: 29px 0;
+		&__slide {
+			padding: 0 50px;
+			gap: 38px;
+		}
+		&__icon {
+			flex: 0 0 115px;
+		}
+		&__text {
+			padding: 1.5px 0;
+			margin: 0 0 14px 0;
+			@include text-style(500, 18px, 21px);
+		}
+		&__name {
+			padding: 0;
+			@include text-style(400, 24px, 35px);
+			&::before {
+				content: "";
+				width: 48px;
+				margin-left: 38px;
+				left: -38px;
+			}
+		}
+	}
+	.reviews-section {
+		padding: 30px 0 84px;
+	}
+}
+
+@media (max-width: 768px) {
+	.comments {
+		&__content {
+			& .swiper-button-prev::after,
+			& .swiper-button-next::after {
+				display: none;
+			}
+			& .swiper-pagination {
+				@include flexbox(flex, center, center);
+				gap: 12px;
+			}
+			& .swiper-pagination-bullet {
+				width: 10px;
+				height: 10px;
+				border-radius: 10px;
+				background: #f8f8f8;
+				border: 1px solid #c6cbcd;
+			}
+			& .swiper-pagination-bullet-active {
+				background: #c6cbcd;
+			}
+		}
+		&__slide {
+			flex-direction: column;
+			align-items: center;
+			gap: 40px;
+			padding: 0 0 25px 0;
+		}
+		&__icon {
+			display: none;
+		}
+		&__text {
+			margin: 0 0 18px 0;
+			@include text-style(500, 14px, 16px);
+		}
+		&__name {
+			padding: 5px 0 30px;
+			@include text-style(400, 18px, 26px);
+		}
+	}
+	.reviews-section {
+		padding: 29px 0;
+	}
+	.reviews-icon {
+		display: block;
+		img {
+			max-width: 115px;
+		}
+	}
+}

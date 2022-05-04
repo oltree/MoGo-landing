@@ -1,0 +1,40 @@
+.partners {
+	padding: 62px 0;
+	background: #f8f8f8;
+	&__columns {
+		display: flex;
+	}
+	&__column {
+		display: flex;
+		flex: 1 1 50%;
+	}
+	&__image {
+		width: 87px;
+		height: 87px;
+		margin: 0 auto;
+		@include flexbox(flex, center, space-around);
+	}
+}
+@media (max-width: 1024px) {
+	.partners {
+		padding: 30px 0;
+		&__image {
+			img {
+				max-width: 55px;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.partners {
+		&__columns {
+			flex-direction: column;
+		}
+		&__column {
+			flex-wrap: wrap;
+		}
+		&__image {
+			width: 140px;
+		}
+	}
+}

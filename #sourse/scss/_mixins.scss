@@ -1,0 +1,15 @@
+//variables
+$transition: all 0.3s;
+$bg-line: #f38281;
+$transition: all 0.5s;
+//mixins
+@mixin text-style($f-w, $f-s, $l-h) {
+	font-weight: $f-w;
+	font-size: $f-s;
+	line-height: $l-h;
+}
+@mixin flexbox($d-f, $a-i, $j-c) {
+	display: $d-f;
+	align-items: $a-i;
+	justify-content: $j-c;
+}

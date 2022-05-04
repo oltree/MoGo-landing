@@ -1,0 +1,114 @@
+.clients {
+	background: linear-gradient(rgba(255, 255, 255, 0.9)), url(../img/bg_3.jpg) no-repeat center;
+	background-size: cover;
+	padding: 42px 0;
+	&__block-title {
+		margin: 0 0 42px 0;
+	}
+	&__comments {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		margin: -21px -25px;
+	}
+	&__comment {
+		display: flex;
+		max-width: 560px;
+		margin: 21px 25px;
+	}
+	&__image {
+		margin: 0 50px 0 0;
+		img {
+			max-width: 130px;
+		}
+	}
+	&__title {
+		padding: 17px 0;
+		@include text-style(700, 24px, 28px);
+		text-transform: uppercase;
+	}
+	&__subtitle {
+		margin: 0 0 29px 0;
+		@include text-style(400, 18px, 21px);
+		text-transform: uppercase;
+	}
+	&__bottom {
+		margin: 0 0 32px 0;
+		width: 70px;
+		height: 4px;
+		background: $bg-line;
+	}
+	&__text {
+		padding: 22.5px 0;
+		@include text-style(400, 18px, 21px);
+		overflow: auto;
+	}
+}
+@media (max-width: 1024px) {
+	.clients {
+		padding: 29px 0;
+		&__block-title {
+			margin: 0 0 28px 0;
+		}
+		&__comments {
+			margin: -14px -27px;
+		}
+		&__comment {
+			margin: 14px 27px;
+		}
+		&__image {
+			margin: 0 49px 0 0;
+			img {
+				max-width: 89px;
+			}
+		}
+		&__title {
+			padding: 7.5px 0;
+			@include text-style(700, 18px, 21px);
+		}
+		&__subtitle {
+			margin: 0 0 18px 0;
+			@include text-style(400, 14px, 16px);
+		}
+		&__bottom {
+			margin: 0 0 22px 0;
+			width: 48px;
+		}
+		&__text {
+			padding: 19px 0;
+			@include text-style(400, 14px, 16px);
+		}
+	}
+}
+@media (max-width: 768px) {
+	.clients {
+		&__comments {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+			margin: -14px 0;
+		}
+		&__comment {
+			max-width: 450px;
+			@include flexbox(flex, center, center);
+			flex-direction: column;
+			margin: 14px auto;
+		}
+		&__image {
+			margin: 0 0 21px 0;
+		}
+		&__title {
+			padding: 7.5px 0;
+		}
+		&__subtitle {
+			margin: 0 0 21px 0;
+		}
+		&__bottom {
+			margin: 0 auto 22px;
+			width: 134px;
+		}
+		&__text {
+			padding: 11px 0;
+			max-height: 150px;
+		}
+	}
+}

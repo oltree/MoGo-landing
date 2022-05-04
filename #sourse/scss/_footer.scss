@@ -1,0 +1,273 @@
+.footer {
+	&__columns {
+		padding: 42px 0;
+		display: flex;
+		gap: 30px;
+	}
+	&__column-logo {
+		max-width: 370px;
+	}
+	&__column-blogs {
+		max-width: 470px;
+	}
+	&__column-inst {
+		max-width: 270px;
+	}
+	&__image {
+		padding: 31px 0;
+	}
+	&__text {
+		max-width: 370px;
+		padding: 17.5px 0;
+		color: #c6cbcd;
+		@include text-style(400, 18px, 21px);
+	}
+	&__followers {
+		padding: 21.5px 0;
+		@include text-style(400, 18px, 30px);
+		text-transform: uppercase;
+		span {
+			@include text-style(700, 36px, 30px);
+		}
+	}
+	&__followers-border {
+		width: 100%;
+		height: 2px;
+		background: #c6cbcd;
+	}
+	&__icons {
+		@include flexbox(flex, center, space-between);
+		margin: 0 0 35px 0;
+	}
+	&__follow {
+		width: 70px;
+		padding: 14px 0;
+		margin: 0 30px 0 0;
+		color: #c6cbcd;
+		@include text-style(400, 13px, 15px);
+		font-style: italic;
+	}
+	&__icon {
+		display: flex;
+		gap: 11px;
+	}
+	&__form {
+		display: flex;
+	}
+	&__mail {
+		width: 100%;
+		font-size: 18px;
+		padding: 15px 0;
+		text-align: center;
+		border: 2px solid #c6cbcd;
+		border-right: 0;
+		&::placeholder {
+			color: #c6cbcd;
+			@include text-style(400, 18px, 21px);
+		}
+	}
+	&__button {
+		padding: 0 16.5px;
+		color: #fff;
+		background: #95e1d3;
+		@include text-style(700, 18px, 21px);
+		text-transform: uppercase;
+	}
+	&__title {
+		padding: 36px 0;
+		@include text-style(700, 24px, 28px);
+		text-transform: uppercase;
+	}
+	&__blogs {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	&__blog {
+		display: flex;
+	}
+	&__blog-image {
+		margin: 0 30px 0 0;
+		img {
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__blog-body {
+		max-width: 270px;
+	}
+	&__blog-title {
+		padding: 3.5px 0;
+		@include text-style(700, 18px, 21px);
+		text-transform: uppercase;
+	}
+	&__blog-date {
+		padding: 10px 0;
+		@include text-style(400, 13px, 15px);
+	}
+	&__inst-images {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	&__all-photo {
+		padding: 37.5px 0;
+	}
+	&__inst-link {
+		@include text-style(400, 13px, 15px);
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+	&__bottom {
+		width: 100%;
+		height: 1px;
+		background: #c6cbcd;
+	}
+	&__copy {
+		padding: 17.5px 0;
+		text-align: center;
+		@include text-style(700, 13px, 15px);
+		text-transform: uppercase;
+	}
+}
+@media (max-width: 1024px) {
+	.footer {
+		&__columns {
+			padding: 29px 0 23px;
+			gap: 20px;
+		}
+		&__image {
+			padding: 15px 0;
+		}
+		&__text {
+			max-width: 317px;
+			padding: 15.5px 0;
+			@include text-style(400, 14px, 16px);
+		}
+		&__followers {
+			padding: 10.5px 0;
+			@include text-style(400, 14px, 30px);
+			span {
+				@include text-style(700, 24px, 30px);
+			}
+		}
+		&__icons {
+			margin: 0 0 25px 0;
+		}
+		&__follow {
+			width: 54px;
+			padding: 7.5px 0;
+			margin: 0 5px 0 0;
+			@include text-style(400, 12px, 14px);
+		}
+		&__icon {
+			img {
+				max-width: 15px;
+			}
+		}
+		&__link {
+			margin: 0;
+			&:first-child {
+				margin: 0;
+			}
+		}
+		&__mail {
+			font-size: 16px;
+			padding: 7px 0;
+			&::placeholder {
+				@include text-style(400, 14px, 16px);
+			}
+		}
+		&__button {
+			padding: 0 30px;
+			@include text-style(700, 14px, 16px);
+		}
+		&__title {
+			padding: 23.5px 0;
+			@include text-style(700, 18px, 21px);
+		}
+		&__blogs {
+			gap: 14.5px;
+		}
+		&__blog-image {
+			margin: 0 20px 0 0;
+		}
+		&__blog-title {
+			padding: 7.5px 0;
+			@include text-style(700, 14px, 16px);
+		}
+		&__blog-date {
+			padding: 5px 0;
+			@include text-style(400, 12px, 14px);
+		}
+		&__all-photo {
+			padding: 14px 0;
+		}
+		&__inst-link {
+			@include text-style(400, 12px, 14px);
+		}
+		&__copy {
+			padding: 15px 0;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.footer {
+		&__columns {
+			padding: 29px 0 0;
+			@include flexbox(flex, center, center);
+			flex-direction: column;
+			text-align: center;
+			gap: 0;
+		}
+		&__column-logo {
+			max-width: 288px;
+		}
+		&__column-blogs {
+			max-width: 288px;
+		}
+		&__column-inst {
+			max-width: 288px;
+		}
+		&__text {
+			padding: 8px 0;
+		}
+		&__form {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+		}
+		&__mail {
+			font-size: 16px;
+			padding: 7px 0 7px 15px;
+			text-align: left;
+			border: 2px solid #c6cbcd;
+		}
+		&__button {
+			padding: 10.5px 0;
+		}
+		&__blogs {
+			gap: 14.5px;
+		}
+		&__blog-image {
+			margin: 0 14px 0 0;
+		}
+		&__blog-body {
+			text-align: left;
+		}
+		&__blog-title {
+			padding: 0;
+		}
+		&__inst-image {
+			img {
+				width: 96px;
+			}
+		}
+		&__all-photo {
+			padding: 31.5px 0;
+		}
+		&__copy {
+			padding: 7.5px 0;
+		}
+	}
+}
