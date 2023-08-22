@@ -1,6 +1,6 @@
 # Project Description
 
-The project is a landing page for a creative job search platform. The primary goal is to present the platform's features in an engaging and informative way.
+The project is a landing page for a creative job search platform. The primary goal is to present the platform's features in an engaging and informative way.(https://oltree.github.io/MoGo-landing/)
 
 ## Technologies
 
